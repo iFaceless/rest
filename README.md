@@ -1,7 +1,7 @@
 RESTful API
 ============
 
-[rest](https://github.com/ifaceless/rest) is a simple wrapper for [go-chi/chi](https://github.com/go-chi/chi), which is designed to be helpful to write RESTful API with struct-based handler (not pure function-based handler).
+[rest](https://github.com/ifaceless/rest) is a simple wrapper for [go-chi/chi](https://github.com/go-chi/chi), which aims at writing RESTful API with struct-based handler (not pure function-based handler) in an elegant way.
 
 Following example demonstrates how to register routes for a struct-based handler previously：
 
@@ -10,9 +10,9 @@ r := chi.NewRouter()
 
 hd = NewTasksHandler()
 
-r.Get("/tasks/{task_id:(\d+)}", hd.Get)
-r.Post("/tasks/{task_id:(\d+)}", hd.Post)
-r.Delete("/tasks/{task_id:(\d+)", hd.Delete}
+r.Get("/tasks/{task_id:(\\d+)}", hd.Get)
+r.Post("/tasks/{task_id:(\\d+)}", hd.Post)
+r.Delete("/tasks/{task_id:(\\d+)", hd.Delete}
 ```
 
 However, with this simple wrapper, you can register you routes much simpler:
