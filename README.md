@@ -23,7 +23,7 @@ r.Post("/tasks/{task_id:(\\d+)}", hd.Post)
 r.Delete("/tasks/{task_id:(\\d+)", hd.Delete}
 ```
 
-However, with this simple wrapper, you can register you routes much simpler:
+Thank goodness, with [rest](https://github.com/ifaceless/rest), you can register you routes much simpler:
 
 ```golang
 r := rest.NewRouter()
