@@ -1,5 +1,10 @@
 RESTful API
 ============
+               _
+ _ __ ___  ___| |_
+| '__/ _ \/ __| __|
+| | |  __/\__ \ |_
+|_|  \___||___/\__|
 
 [rest](https://github.com/ifaceless/rest) is a simple wrapper for [go-chi/chi](https://github.com/go-chi/chi), which aims at writing RESTful API with struct-based handler (not pure function-based handler) in an elegant way.
 
