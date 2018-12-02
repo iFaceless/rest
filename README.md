@@ -69,7 +69,7 @@ func (hd *TaskHandler) Delete() {
 }
 ```
 
-# Core API
+# Core APIs
 
 - `Prepare()`
 - `Finish()`
