@@ -16,7 +16,7 @@ Following example demonstrates how to register routes for a struct-based handler
 ```golang
 r := chi.NewRouter()
 
-hd = NewTasksHandler()
+hd := NewTasksHandler()
 
 r.Get("/tasks/{task_id:(\\d+)}", hd.Get)
 r.Post("/tasks/{task_id:(\\d+)}", hd.Post)
