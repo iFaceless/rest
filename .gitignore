@@ -1,0 +1,4 @@
+vendor/
+.idea/
+Gopkg.lock
+Gopkg.toml
