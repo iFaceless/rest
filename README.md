@@ -23,7 +23,7 @@ r.Post("/tasks/{task_id:(\\d+)}", hd.Post)
 r.Delete("/tasks/{task_id:(\\d+)", hd.Delete}
 ```
 
-Thank goodness, with [rest](https://github.com/ifaceless/rest), you can register you routes much simpler:
+Thank goodness, with [rest](https://github.com/ifaceless/rest), you can register routes in a much simpler way:
 
 ```golang
 r := rest.NewRouter()
@@ -33,7 +33,7 @@ r.MountHandler("/tasks/{task_id:(\\d+)}", &TasksHandler{})
 # Install
 
 ```
-go get -u https://github.com/ifaceless/rest
+go get -u github.com/iFaceless/rest
 ```
 
 # Quick Start
