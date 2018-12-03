@@ -3,10 +3,10 @@ package main
 import (
 	"time"
 
-	"github.com/gin-gonic/gin/json"
 	"github.com/go-chi/chi"
 	"github.com/spf13/cast"
 	"github.com/iFaceless/rest"
+	"encoding/json"
 )
 
 type Task struct {
